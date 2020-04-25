@@ -37,7 +37,9 @@ public class ValidaJogada {
     }
 
     public boolean verificaTipoDaJogada (Jogador1 jogador1, Jogador2 jogador2) {
-        if (Integer.class.equals(jogador1.getJogada()) || Integer.class.equals(jogador2.getJogada())) return true;
+        if (jogador1.getJogada().equals("pedra") || jogador1.getJogada().equals("papel") || jogador1.getJogada().equals("tesoura")) return true;
+
+        if (jogador2.getJogada().equals("pedra") || jogador2.getJogada().equals("papel") || jogador2.getJogada().equals("tesoura")) return true;
 
         return false;
     }

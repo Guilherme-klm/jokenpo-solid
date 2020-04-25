@@ -8,14 +8,12 @@ public class Jogada {
     private ValidaJogada validaJogada;
     
     public Jogador1 tipoJogadaJogador1(String jogada) {
-        Jogador1 jogador1 = new Jogador1();
-        jogador1.setJogada(jogada);
+        Jogador1 jogador1 = new Jogador1(jogada);
         return jogador1;
     }
     
     public Jogador2 tipoJogadaJogador2(String jogada) {
-        Jogador2 jogador2 = new Jogador2();
-        jogador2.setJogada(jogada);
+        Jogador2 jogador2 = new Jogador2(jogada);
         return jogador2;
     }
 
