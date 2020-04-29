@@ -67,7 +67,7 @@ public class Main {
             }
 
         } while(!jogada1Valida || !jogada2Valida);
-        
+
         scanner.close();
 
     }

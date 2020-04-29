@@ -25,6 +25,6 @@ public class Jogar {
         jogador1 = jokenpoService.setJogadaJogador1(jogadaJogador1);
         jogador2 = jokenpoService.setJogadaJogador2(jogadaJogador2);
 
-       jokenpoService.validaJogadas(jogador1, jogador2);
+        jokenpoService.validaJogadas(jogador1, jogador2);
     }
 }
