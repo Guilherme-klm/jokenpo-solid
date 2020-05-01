@@ -5,7 +5,7 @@ import com.jokenpo.model.Jogador2;
 
 public class JokenpoService {
 
-    public Jogada jogada;
+    public Jogada jogada = new Jogada();
 
     public Jogador1 setJogadaJogador1 (String jogador1) {
         return jogada.tipoJogadaJogador1(jogador1);
@@ -15,7 +15,7 @@ public class JokenpoService {
         return jogada.tipoJogadaJogador2(jogador2);
     }
 
-    public String validaJogadas (Jogador1 jogador1, Jogador2 jogador2) throws Exception {
+    public String validaJogadas (Jogador1 jogador1, Jogador2 jogador2) {
        return jogada.validaJogadas(jogador1, jogador2);
     }
 

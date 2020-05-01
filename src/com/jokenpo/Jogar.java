@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 public class Jogar {
 
-    private static JokenpoService jokenpoService;
+    private static JokenpoService jokenpoService = new JokenpoService();
     private static Jogador1 jogador1;
     private static Jogador2 jogador2;
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
@@ -25,6 +25,6 @@ public class Jogar {
         jogador1 = jokenpoService.setJogadaJogador1(jogadaJogador1);
         jogador2 = jokenpoService.setJogadaJogador2(jogadaJogador2);
 
-        jokenpoService.validaJogadas(jogador1, jogador2);
+        System.out.println(jokenpoService.validaJogadas(jogador1, jogador2));
     }
 }
